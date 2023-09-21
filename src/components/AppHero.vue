@@ -1,7 +1,6 @@
 
 <script>
 import AppTitle from './AppTitle.vue'
-import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default {
 
