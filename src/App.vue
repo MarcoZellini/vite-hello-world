@@ -1,16 +1,17 @@
 <script>
-
-// import HelloWorld from './components/HelloWorld.vue'
+import AppHero from './components/AppHero.vue'
 import AppTitle from './components/AppTitle.vue'
 
 export default {
   data() {
     return {
       text: "Hello Vite",
+      title: 'My First Hero Section',
       count: 0
     }
   },
   components: {
+    AppHero,
     AppTitle
   },
 
@@ -19,9 +20,9 @@ export default {
 </script>
 
 <template>
-  <h1>{{ text }}</h1>
-  <!--   <HelloWorld msg="MessaggioTest" /> -->
+  <h1 class="text-center">{{ text }}</h1>
   <AppTitle title="La mia prima app con Vite!" />
+  <AppHero title="Ho creato una Hero annidando due Vue Components" />
 </template>
 
 <style></style>
